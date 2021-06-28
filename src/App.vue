@@ -3,6 +3,8 @@
 </template>
 
 <style lang="scss">
+@import '~photo-sphere-viewer/dist/photo-sphere-viewer.css';
+@import '~photo-sphere-viewer/dist/plugins/markers.css';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

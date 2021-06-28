@@ -4,8 +4,6 @@
 <script>
 import { Viewer } from 'photo-sphere-viewer'
 import MarkersPlugin from 'photo-sphere-viewer/dist/plugins/markers'
-import 'photo-sphere-viewer/dist/photo-sphere-viewer.css'
-import 'photo-sphere-viewer/dist/plugins/markers.css'
 
 export default {
   data () {
@@ -17,7 +15,7 @@ export default {
   },
   mounted () {
     this.viewer = new Viewer({
-      container: document.querySelector('#viewer'),
+      container: document.getElementById('viewer'),
       panorama: this.imgurl1,
       size: {
         width: '100vw',
@@ -33,19 +31,6 @@ export default {
               svgStyle: {
                 fill: 'rgba(255,255,0,0.3)',
                 stroke: 'yellow',
-                strokeWidth: '2px'
-              },
-              longitude: -1.5,
-              latitude: -0.28,
-              anchor: 'center right'
-            },
-            {
-              id: 'circle2',
-              tooltip: '返回！',
-              circle: 30,
-              svgStyle: {
-                fill: 'rgba(255,255,0,0.3)',
-                stroke: 'blue',
                 strokeWidth: '2px'
               },
               longitude: -1.5,

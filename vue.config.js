@@ -8,7 +8,7 @@ module.exports = {
   outputDir: 'dist',
 
   // 放置静态资源的地方 (js/css/img/font/...)
-  assetsDir: '',
+  assetsDir: './',
 
   // 用于多页配置，默认是 undefined
   pages: {

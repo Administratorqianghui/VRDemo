@@ -6,4 +6,6 @@ import store from './store'
 
 const vue = createApp(App)
 
-vue.use(store).use(router).mount('#app')
+vue.use(store)
+  .use(router)
+  .mount('#app')
